@@ -1,0 +1,19 @@
+model: fc_siam_diff
+model_kwargs:
+  base_channels: 16
+data_root: data/LEVIR_CD_SUBSET_256
+output_dir: results
+seed: 42
+train:
+  epochs: 10
+  batch_size: 4
+  lr: 0.001
+  weight_decay: 0.0001
+  num_workers: 0
+  pos_weight: auto
+  pos_weight_max: 20.0
+  gradient_clip: 1.0
+  scheduler: cosine
+  val_thresholds: [0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7]
+  max_train_batches: null
+  max_val_batches: null

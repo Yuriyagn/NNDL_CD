@@ -1,0 +1,38 @@
+# Datasets (large image files)
+data/
+
+# Experimental results
+results/
+runs/
+figures/
+
+# Large model files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Logs and caches
+*.log
+.cache/
+
+# OS editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Virtual environments
+.env
+venv/
+.venv/
